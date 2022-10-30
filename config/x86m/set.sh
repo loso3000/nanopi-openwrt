@@ -43,9 +43,9 @@ wget -qO package/base-files/files/etc/banner https://raw.githubusercontent.com/s
 wget -qO package/base-files/files/etc/profile https://raw.githubusercontent.com/sirpdboy/build/master/profile
 wget -qO package/base-files/files/etc/sysctl.conf https://raw.githubusercontent.com/sirpdboy/sirpdboy-package/master/set/sysctl.conf #修正nat回流 
 # curl -fsSL  https://raw.githubusercontent.com/sirpdboy/sirpdboy-package/master/set/sysctl.conf > ./package/base-files/files/etc/sysctl.conf
-cp -f ./package/build/banner ./package/base-files/files/etc/banner
-cat ./package/build/profile > package/base-files/files/etc/profile
-cat ./package/build/set/sysctl.conf >  package/base-files/files/etc/sysctl.conf
+# cp -f ./package/build/banner ./package/base-files/files/etc/banner
+# cat ./package/build/profile > package/base-files/files/etc/profile
+# cat ./package/build/set/sysctl.conf >  package/base-files/files/etc/sysctl.conf
 
 echo "poweroff"
 curl -fsSL  https://raw.githubusercontent.com/sirpdboy/other/master/patch/poweroff/poweroff.htm > ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_system/poweroff.htm 
